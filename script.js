@@ -2,6 +2,7 @@ const textarea = document.getElementById('texto')
 const falar = document.getElementById('botao-falar')
 const pausar = document.getElementById('botao-pausar')
 const despausar = document.getElementById('botao-despausar')
+const cancelar = document.getElementById('botao-cancelar')
 const synth = window.speechSynthesis
 
 falar.addEventListener('click', () => {
@@ -18,4 +19,8 @@ pausar.addEventListener('click', () => {
 
 despausar.addEventListener('click', () => {
   synth.resume()
+})
+
+cancelar.addEventListener('click', () => {
+  synth.cancel()
 })
