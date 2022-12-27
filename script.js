@@ -23,4 +23,5 @@ despausar.addEventListener('click', () => {
 
 cancelar.addEventListener('click', () => {
   synth.cancel()
+  textarea.value = ''
 })
